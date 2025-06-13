@@ -1,0 +1,39 @@
+.theme-toggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease;
+  }
+}
+
+.theme {
+  color: #333;
+}
+
+.themeDark {
+  color: #fff;
+}
+
+// Add these variables to your _variables.scss if they don't exist
+:root {
+  --text-color: #333;
+  --background-color: #fff;
+}
+
+[data-theme="dark"] {
+  --text-color: #fff;
+  --background-color: #1a1a1a;
+} 
