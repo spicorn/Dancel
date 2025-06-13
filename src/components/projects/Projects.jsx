@@ -11,7 +11,7 @@ export const projects = [
     description:
       "It is a growing firm that offer a range of services related to websites, such as designing, developing and maintaining them. Whether you require a fresh website for your business.",
     image: "https://ik.imagekit.io/qvdv4r3lk/Danler.png?updatedAt=1723128002657",
-    url: "https://www.danlertech.co.zw/",
+    url: "https://danler-tech.vercel.app/",
   },
   {
     name: "Burger Restaurant",
