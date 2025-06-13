@@ -197,7 +197,7 @@ const Header = () => {
           >
             Contact me
           </p>
-          <a href="/Resume.pdf" download="Dancel's Resume">
+          <a href="./Resume.pdf" download="Dancel_Mautsa_Resume.pdf" target="_blank" rel="noopener noreferrer">
             <p>Resumé</p>
           </a>
           <ThemeToggle />
