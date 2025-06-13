@@ -7,7 +7,7 @@ import { Analytics } from "@vercel/analytics/react";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/Dancel/">
       <App />
       <Analytics />
     </BrowserRouter>
