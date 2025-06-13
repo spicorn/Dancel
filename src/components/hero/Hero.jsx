@@ -30,10 +30,12 @@ const Hero = () => {
               exceptional websites and making the web accessible to everyone.
             </p>
             <div className="resumeContainer">
-              <a
+               <a
                 className="resume"
-                href="/Resume.pdf"
-                download="Dancel's Resume"
+                href="./Resume.pdf"
+                download="Dancel_Mautsa_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <p className="viewCv">
                   <span>View my resumé</span>
