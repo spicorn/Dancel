@@ -35,7 +35,7 @@ export const projects = [
     url: "https://spicorn.github.io/Vakani/",
   },
   {
-    name: "Instatnt Homes",
+    name: "Instant Homes",
     description:
       "Instant Homes is Zimbabwe's leading provider of high-quality, customizable, and sustainable prefab homes.",
     image: "https://ik.imagekit.io/wuvzopkfi/homes.png?updatedAt=1751534434332",
