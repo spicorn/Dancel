@@ -11,7 +11,7 @@ export const projects = [
     description:
       "It is a growing firm that offer a range of services related to websites, such as designing, developing and maintaining them. Whether you require a fresh website for your business.",
     image: "https://ik.imagekit.io/qvdv4r3lk/Danler.png?updatedAt=1723128002657",
-    url: "https://danler-tech.vercel.app/",
+    url: "https://www.danlertech.co.zw/",
   },
   {
     name: "Burger Restaurant",
@@ -28,19 +28,27 @@ export const projects = [
     url: "https://spicorn.github.io/Associated-Foods-ZImbabwe/",
   },
   {
-    name: "My first portfolio",
-    description:
-      "Developing this website taught me how to build responsive websites and also how to create animated cards and grids. The animations included in this portfolio where made possible through the use of javascript and css.",
-    image: "https://ik.imagekit.io/qvdv4r3lk/portfolio.png?updatedAt=1715943540727",
-    url: "https://spicorn.github.io/dancel-mautsa/",
-  },
-  {
     name: "Vakani Bricks",
     description:
       "Vakani is a leading building materials company that provides high quality products and reliable services to customers and communities in and around Zimbabwe.",
     image: "https://ik.imagekit.io/qvdv4r3lk/vakani.png?updatedAt=1715932037555",
     url: "https://spicorn.github.io/Vakani/",
   },
+  {
+    name: "Instatnt Homes",
+    description:
+      "Instant Homes is Zimbabwe's leading provider of high-quality, customizable, and sustainable prefab homes.",
+    image: "https://ik.imagekit.io/wuvzopkfi/homes.png?updatedAt=1751534434332",
+    url: "https://spicorn.github.io/instanthomes/",
+  },
+  {
+    name: "My first portfolio",
+    description:
+      "Developing this website taught me how to build responsive websites and also how to create animated cards and grids. The animations included in this portfolio where made possible through the use of javascript and css.",
+    image: "https://ik.imagekit.io/qvdv4r3lk/portfolio.png?updatedAt=1715943540727",
+    url: "https://spicorn.github.io/dancel-mautsa/",
+  },
+  
 ];
 
 const Projects = () => {
