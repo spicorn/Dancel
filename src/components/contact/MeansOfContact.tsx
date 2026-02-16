@@ -3,7 +3,7 @@ import {
   GmailDarkIcon,
   GmailIcon,
   LinkedInContactIcon,
-  TwitterContactIcon,
+  GithubIcon,
 } from "../../assets/icons/icons";
 import ContactCard from "./ContactCard";
 import "./contact.scss";
@@ -19,20 +19,17 @@ const MeansOfContact: React.FunctionComponent<MeansOfContactProps> = () => {
       icon: theme.isDarkmode ? <GmailDarkIcon /> : <GmailIcon />,
       appText: "Send me an email",
       appDetails: (
-        <a
-          href="mailto:dancelmautsa21@gmail.com"
-          aria-label="send dancel a mail"
-        >
-          dancelmautsa21@gmail.com
+        <a href="mailto:dancelmautsa@gmail.com" aria-label="send dancel a mail">
+          dancelmautsa@gmail.com
         </a>
       ),
     },
     {
-      icon: <TwitterContactIcon />,
+      icon: <GithubIcon />,
       appText: "Follow me on Twitter",
       appDetails: (
         <a
-          href="https://twitter.com/dancel_mautsa"
+          href="https://github.com/spicorn"
           target="_blank"
           rel="noreferrer"
           aria-label="follow dancel on twitter"

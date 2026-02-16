@@ -11,6 +11,8 @@ const AboutMe = () => {
         <img
           src="https://ik.imagekit.io/qvdv4r3lk/me.png?updatedAt=1721930401325"
           alt="dancel mautsa"
+          loading="lazy"
+          decoding="async"
         />
         <div className="details">
           <AnimatedText
@@ -25,9 +27,9 @@ const AboutMe = () => {
             making every element on the web accessible to everyone.
           </p>
           <p className={theme.isDarkmode ? "deetsTDark" : "deetsT"}>
-            I am a self-taught developer with a background in Computer Science.
-            I have a strong foundation in HTML, CSS, JavaScript, React,
-            Tailwind, Node.js and Firebase. I am always eager to learn new
+            I am a self-taught developer with a background in Web Development. I
+            have a strong foundation in HTML, CSS, JavaScript, React, Tailwind,
+            Node.js, Typescript and Git. I am always eager to learn new
             technologies and improve my skills.
           </p>
           <p className={theme.isDarkmode ? "deetsTDark" : "deetsT"}>
@@ -41,4 +43,4 @@ const AboutMe = () => {
   );
 };
 
-export default AboutMe; 
+export default AboutMe;

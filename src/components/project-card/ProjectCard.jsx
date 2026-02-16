@@ -56,7 +56,12 @@ const ProjectCard = ({ projectName, description, image, link, index }) => {
         variants={index % 2 === 0 ? cardVariants : cardVariantsInvert}
         className="leftPj"
       >
-        <img src={image} alt="dancel mautsa project" />
+        <img
+          src={image}
+          alt="dancel mautsa project"
+          loading="lazy"
+          decoding="async"
+        />
       </motion.div>
       <div className={index % 2 === 0 ? "rightPjInvert" : "rightPj"}>
         <AnimatedText

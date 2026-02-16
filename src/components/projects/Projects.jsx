@@ -7,19 +7,22 @@ import { useLocation } from "react-router-dom";
 
 export const projects = [
   {
+    name: "First Mutual Holdings Limited",
+    description:
+      "Designed and developed features for the First Mutual Muzukuru online platform, focusing on performance, usability and seamless user experience.",
+    image:
+      "https://ik.imagekit.io/qvdv4r3lk/firstmutual.png?updatedAt=1771244059303",
+    url: "https://first-mutual.muzukuru.com/",
+  },
+  {
     name: "Danler Tech",
     description:
       "It is a growing firm that offer a range of services related to websites, such as designing, developing and maintaining them. Whether you require a fresh website for your business.",
-    image: "https://ik.imagekit.io/qvdv4r3lk/Danler.png?updatedAt=1723128002657",
+    image:
+      "https://ik.imagekit.io/qvdv4r3lk/Danler.png?updatedAt=1723128002657",
     url: "https://www.danlertech.co.zw/",
   },
-  {
-    name: "Burger Restaurant",
-    description:
-      "This is a simple responsive buger website. It allows users to go through the menu of the restaurant and be able to choose the type of burger they want. It also includes a search button fuctionality.",
-    image: "https://ik.imagekit.io/qvdv4r3lk/Burger.png?updatedAt=1715932037865",
-    url: "https://spicorn.github.io/burger/",
-  },
+
   {
     name: "Associated Foods Zimbabwe",
     description:
@@ -31,7 +34,8 @@ export const projects = [
     name: "Vakani Bricks",
     description:
       "Vakani is a leading building materials company that provides high quality products and reliable services to customers and communities in and around Zimbabwe.",
-    image: "https://ik.imagekit.io/qvdv4r3lk/vakani.png?updatedAt=1715932037555",
+    image:
+      "https://ik.imagekit.io/qvdv4r3lk/vakani.png?updatedAt=1715932037555",
     url: "https://spicorn.github.io/Vakani/",
   },
   {
@@ -45,10 +49,18 @@ export const projects = [
     name: "My first portfolio",
     description:
       "Developing this website taught me how to build responsive websites and also how to create animated cards and grids. The animations included in this portfolio where made possible through the use of javascript and css.",
-    image: "https://ik.imagekit.io/qvdv4r3lk/portfolio.png?updatedAt=1715943540727",
+    image:
+      "https://ik.imagekit.io/qvdv4r3lk/portfolio.png?updatedAt=1715943540727",
     url: "https://spicorn.github.io/dancel-mautsa/",
   },
-  
+  {
+    name: "Burger Restaurant",
+    description:
+      "This is a simple responsive buger website. It allows users to go through the menu of the restaurant and be able to choose the type of burger they want. It also includes a search button fuctionality.",
+    image:
+      "https://ik.imagekit.io/qvdv4r3lk/Burger.png?updatedAt=1715932037865",
+    url: "https://spicorn.github.io/burger/",
+  },
 ];
 
 const Projects = () => {
@@ -56,8 +68,12 @@ const Projects = () => {
   const location = useLocation();
 
   return (
-    <div className={theme.isDarkmode ? "projectContainerDark" : "projectContainer"}>
-      <div className={theme.isDarkmode ? "projectWrapperDark" : "projectWrapper"}>
+    <div
+      className={theme.isDarkmode ? "projectContainerDark" : "projectContainer"}
+    >
+      <div
+        className={theme.isDarkmode ? "projectWrapperDark" : "projectWrapper"}
+      >
         {location.pathname === "/" && (
           <SectionHeading sectionName="Selected Projects" />
         )}

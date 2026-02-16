@@ -71,11 +71,11 @@ const Header = () => {
     theme.isDarkmode
       ? headerRef.current?.classList.replace(
           "headerWrapper",
-          "headerWrapperDark"
+          "headerWrapperDark",
         )
       : headerRef.current?.classList.replace(
           "headerWrapperDark",
-          "headerWrapper"
+          "headerWrapper",
         );
   }, [theme.isDarkmode, visible]);
 
@@ -90,6 +90,8 @@ const Header = () => {
             <img
               src="https://ik.imagekit.io/qvdv4r3lk/me.png?updatedAt=1721930401325"
               alt="dancel mautsa"
+              loading="lazy"
+              decoding="async"
               draggable={false}
             />
           </div>
@@ -133,8 +135,11 @@ const Header = () => {
                 >
                   Contact me
                 </p>
-                
-                <a href="/Resume.pdf" download="Resume.pdf">
+
+                <a
+                  href="/Dancel_Mautsa_Resume.pdf"
+                  download="Dancel_Mautsa_Resume.pdf"
+                >
                   <p>Resumé</p>
                 </a>
               </div>
@@ -162,10 +167,12 @@ const Header = () => {
           <div className="logo">
             <img
               style={{
-                height: 45,
+                height: 50,
               }}
               src="https://ik.imagekit.io/qvdv4r3lk/me.png?updatedAt=1721930401325"
               alt="mautsa"
+              loading="lazy"
+              decoding="async"
               draggable={false}
             />
           </div>
@@ -197,7 +204,12 @@ const Header = () => {
           >
             Contact me
           </p>
-          <a href="./Resume.pdf" download="Dancel_Mautsa_Resume.pdf" target="_blank" rel="noopener noreferrer">
+          <a
+            href="/Dancel_Mautsa_Resume.pdf"
+            download="Dancel_Mautsa_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <p>Resumé</p>
           </a>
           <ThemeToggle />
@@ -216,4 +228,4 @@ const Header = () => {
   );
 };
 
-export default Header; 
+export default Header;
