@@ -6,6 +6,7 @@ import { RightArrowIcon } from "../../assets/icons/icons";
 import Lottie from "lottie-react";
 import animationData from "../../assets/lottie/welcome.json";
 import BackgroundAnimation from "../../pages/BackgroundAnimation";
+import resume from "../../assets/Dancel_Mautsa_Resume.pdf";
 
   
 
@@ -32,8 +33,8 @@ const Hero = () => {
             <div className="resumeContainer">
                <a
                 className="resume"
-                href="./Resume.pdf"
-                download="Dancel_Mautsa_Resume.pdf"
+                href={resume}
+                download="Dancel's Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >

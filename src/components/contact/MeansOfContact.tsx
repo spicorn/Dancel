@@ -26,15 +26,15 @@ const MeansOfContact: React.FunctionComponent<MeansOfContactProps> = () => {
     },
     {
       icon: <GithubIcon />,
-      appText: "Follow me on Twitter",
+      appText: "Follow me on Github",
       appDetails: (
         <a
           href="https://github.com/spicorn"
           target="_blank"
           rel="noreferrer"
-          aria-label="follow dancel on twitter"
+          aria-label="follow dancel on github"
         >
-          @dancel_mautsa
+          spicorn
         </a>
       ),
     },

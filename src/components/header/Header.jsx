@@ -8,6 +8,7 @@ import "./header.scss";
 import { useNavigate, useLocation } from "react-router";
 import { ThemeContext } from "../../App";
 import ThemeToggle from "../theme-toggle/ThemeToggle";
+import resume from "../../assets/Dancel_Mautsa_Resume.pdf";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -137,8 +138,10 @@ const Header = () => {
                 </p>
 
                 <a
-                  href="/Dancel_Mautsa_Resume.pdf"
-                  download="Dancel_Mautsa_Resume.pdf"
+                  href={resume}
+                  download="Dancel's Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <p>Resumé</p>
                 </a>
@@ -205,8 +208,8 @@ const Header = () => {
             Contact me
           </p>
           <a
-            href="/Dancel_Mautsa_Resume.pdf"
-            download="Dancel_Mautsa_Resume.pdf"
+            href={resume}
+            download="Dancel's Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
