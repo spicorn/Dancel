@@ -6,6 +6,7 @@ import {
 } from "../../assets/icons/icons";
 import "./header.scss";
 import { useNavigate, useLocation } from "react-router";
+import { getCalApi } from "@calcom/embed-react";
 import { ThemeContext } from "../../App";
 import ThemeToggle from "../theme-toggle/ThemeToggle";
 import resume from "../../assets/Dancel_Mautsa_Resume.pdf";
@@ -47,6 +48,13 @@ const Header = () => {
       });
     };
   });
+
+  useEffect(() => {
+    (async function () {
+      const cal = await getCalApi({ namespace: "30min" });
+      cal("ui", { hideEventTypeDetails: false, layout: "month_view" });
+    })();
+  }, []);
 
   const handleHomeClick = () => {
     navigate("/");
@@ -137,6 +145,14 @@ const Header = () => {
                   Contact me
                 </p>
 
+                <p
+                  data-cal-namespace="30min"
+                  data-cal-link="dancel-mautsa/30min"
+                  data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
+                >
+                  Book A Call
+                </p>
+
                 <a
                   href={resume}
                   download="Dancel's Resume.pdf"
@@ -207,6 +223,18 @@ const Header = () => {
           >
             Contact me
           </p>
+
+          <p
+            data-cal-namespace="30min"
+            data-cal-link="dancel-mautsa/30min"
+            data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
+            // className={
+            //   location.pathname === "/" ? "activeLink" : "links"
+            // }
+          >
+            Book A Call
+          </p>
+
           <a
             href={resume}
             download="Dancel's Resume.pdf"

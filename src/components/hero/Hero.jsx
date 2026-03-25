@@ -8,9 +8,6 @@ import animationData from "../../assets/lottie/welcome.json";
 import BackgroundAnimation from "../../pages/BackgroundAnimation";
 import resume from "../../assets/Dancel_Mautsa_Resume.pdf";
 
-  
-
-
 const Hero = () => {
   const theme = useContext(ThemeContext);
   return (
@@ -22,7 +19,7 @@ const Hero = () => {
       <div className={theme.isDarkmode ? "heroContainerDark" : "heroContainer"}>
         <div className="heroWrapper">
           <div className="leftHero">
-            <p className="hello" >
+            <p className="hello">
               Hello <span className="wave">👋</span>
             </p>
             <h2 className="name">I'm Dancel Mautsa</h2>
@@ -31,7 +28,7 @@ const Hero = () => {
               exceptional websites and making the web accessible to everyone.
             </p>
             <div className="resumeContainer">
-               <a
+              <a
                 className="resume"
                 href={resume}
                 download="Dancel's Resume.pdf"
@@ -63,4 +60,4 @@ const Hero = () => {
   );
 };
 
-export default Hero; 
+export default Hero;
