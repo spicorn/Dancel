@@ -14,6 +14,15 @@ export const projects = [
       "https://ik.imagekit.io/qvdv4r3lk/firstmutual.png?updatedAt=1771244059303",
     url: "https://first-mutual.muzukuru.com/",
   },
+
+  {
+    name: "Chema",
+    description:
+      "It is a growing platform to pay fpr chema to the deseaced family",
+    image:
+      "https://ik.imagekit.io/qvdv4r3lk/Screenshot%202026-02-20%20103549.png?updatedAt=1771576794569",
+    url: "https://www.danlertech.co.zw/",
+  },
   {
     name: "Danler Tech",
     description:
