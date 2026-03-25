@@ -21,16 +21,39 @@ const AboutMe = () => {
             once
           />
           <p className={theme.isDarkmode ? "deetsTDark" : "deetsT"}>
-            I am a Frontend Developer based in Harare, Zimbabwe. I have a
-            serious passion for UI effects and animations, building pixel
-            perfect web applications, creating dynamic user experiences and
-            making every element on the web accessible to everyone.
+            I'm a Frontend Developer based in Harare, Zimbabwe, working with
+            clients to build fast, polished and accessible web applications and
+            mobile apps that users actually enjoy using. With a deep focus on UI
+            precision, smooth animations and clean architecture, I bridge the
+            gap between great design and reliable engineering so your product
+            doesn't just look good, it performs.
           </p>
+          <h3 className={theme.isDarkmode ? "deetsTDark" : "deetsT"}>
+            What l bring to your project:
+          </h3>
           <p className={theme.isDarkmode ? "deetsTDark" : "deetsT"}>
-            I am a self-taught developer with a background in Web Development. I
-            have a strong foundation in HTML, CSS, JavaScript, React, Tailwind,
-            Node.js, Typescript and Git. I am always eager to learn new
-            technologies and improve my skills.
+            <ul>
+              <li>
+                Pixel perfect implementation from any design file (Figma, XD, or
+                your vision)
+              </li>
+              <li>
+                Performant, scalable frontends built with React, TypeScript, and
+                Tailwind CSS
+              </li>
+              <li>
+                Seamless user experiences with thoughtful micro-interactions and
+                transitions
+              </li>
+              <li>
+                Accessible interfaces built to WCAG standards — reaching every
+                user, on every device
+              </li>
+              <li>
+                Full-stack capability with Node.js for end-to-end delivery when
+                needed
+              </li>
+            </ul>
           </p>
           <p className={theme.isDarkmode ? "deetsTDark" : "deetsT"}>
             When I am not coding, I am either watching movies, playing video
