@@ -15,13 +15,16 @@ export const ThemeContext = createContext({
 
 const App = () => {
   const [isDarkmode, setIsDarkMode] = useState(() => {
-    const savedTheme = localStorage.getItem('theme');
-    return savedTheme === 'dark';
+    const savedTheme = localStorage.getItem("theme");
+    return savedTheme === "dark";
   });
 
   useEffect(() => {
-    document.documentElement.setAttribute('data-theme', isDarkmode ? 'dark' : 'light');
-    localStorage.setItem('theme', isDarkmode ? 'dark' : 'light');
+    document.documentElement.setAttribute(
+      "data-theme",
+      isDarkmode ? "dark" : "light",
+    );
+    localStorage.setItem("theme", isDarkmode ? "dark" : "light");
   }, [isDarkmode]);
 
   const toggleTheme = () => {
@@ -61,4 +64,4 @@ const App = () => {
   );
 };
 
-export default App; 
+export default App;
