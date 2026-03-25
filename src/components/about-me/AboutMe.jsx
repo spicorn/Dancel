@@ -56,9 +56,14 @@ const AboutMe = () => {
             </ul>
           </p>
           <p className={theme.isDarkmode ? "deetsTDark" : "deetsT"}>
-            When I am not coding, I am either watching movies, playing video
-            games, or reading books. I also love to travel and explore new
-            places.
+            I'm self-taught, which means I've earned every skill through real
+            problem solving not just coursework. That translates to a developer
+            who thinks critically, adapts fast and takes ownership of results.{" "}
+            <br />
+            Whether you're launching a product, rebuilding a legacy interface,
+            or scaling a platform I'd love to help you build something worth
+            being proud of. <br />
+            Let's work together.
           </p>
         </div>
       </div>
